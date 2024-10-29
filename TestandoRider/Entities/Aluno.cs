@@ -17,18 +17,11 @@ public class Aluno(string nome)
 
     public string Resultado(double media)
     {
-        if (media >= 6.0 && media < 10.0)
+        return media switch
         {
-            return "Aprovado";
-        }
-        if (media > 0.0 && media < 6.0)
-        {
-            return "Reprovado";
-        }
-        else
-        {
-            return "Erro de valores digitados";
-        }
-        
+            >= 6.0 and < 10.0 => "Aprovado",
+            > 0.0 and < 6.0 => "Reprovado",
+            _ => "Erro de valores digitados"
+        };
     }
 }

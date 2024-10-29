@@ -21,5 +21,3 @@ var aluno = new Aluno(nome);
 var media = aluno.Media(notas);
 Console.WriteLine($"\nO aluno {aluno.Nome} obteve a média: {media:F2}");
 Console.WriteLine($"Aluno foi : {aluno.Resultado(media)}");
-
-
